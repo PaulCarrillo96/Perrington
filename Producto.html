@@ -11,12 +11,9 @@
   <!-- Estilos personalizados -->
   <style>
     body {
-      background-color: #f2f2f2; /* Cambiar fondo de página */
+      background-color: #ffffff; /* Cambiar fondo de página */
       color: #333; /* Texto negro */
-      /* Agregar imagen de fondo */
-      background-image: url('fondo2.jpg');
-      background-size: cover;
-      background-position: center;
+
     }
     .navbar {
       width: 100%;
@@ -25,10 +22,27 @@
     .navbar-nav .nav-link {
       color: #fff !important; /* Cambiar color del texto del navbar */
     }
-    .producto {
-      margin-top: 20px; /* Espacio entre productos */
-      margin-bottom: 20px; /* Espacio entre productos */
+    .btn-primary {
+    background-color: #65a2aa; /* Cambia el color de fondo de los botones a naranja */
+    border-color: #65a2aa; /* Cambia el color del borde de los botones a naranja */
     }
+
+   .btn-primary:hover {
+    background-color: #5a8c92; /* Cambia el color de fondo de los botones al pasar el cursor a un tono más oscuro de naranja */
+    border-color: #5a8c92; /* Cambia el color del borde de los botones al pasar el cursor a un tono más oscuro de naranja */
+    }
+    .producto {
+    margin-top: 20px; /* Espacio entre productos */
+    margin-bottom: 20px; /* Espacio entre productos */
+    border: 3px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+    padding: 10px; /* Espacio interno dentro del contenedor */
+    border-radius: 8px; /* Borde redondeado */
+    }
+   .cuadro-productos {
+    border: 2px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+    padding: 10px; /* Espacio interno dentro del contenedor */
+    border-radius: 8px; /* Borde redondeado */
+     }
     .producto img {
       max-width: 100%; /* Ajustar imagen al ancho del contenedor */
       height: auto;
@@ -39,6 +53,7 @@
     .producto p {
       font-size: 1rem; /* Tamaño de fuente del precio */
     }
+    
     .contacto {
       font-size: 0.9rem; /* Tamaño de fuente más pequeño */
       background-color: #333; /* Color de fondo del cuadro de contacto */
@@ -98,38 +113,36 @@
 
 <!-- Cuadro de texto "Todos los Productos" -->
 <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-6 offset-md-3 text-center" style="background-color: #65a2aa; color: #fff; padding: 10px;">
-        <h2 class="font-weight-bold">TODOS LOS PRODUCTOS</h2>
-      </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center cuadro-productos" style="background-color: #65a2aa; color: #fff; padding: 10px;">
+      <h2 class="font-weight-bold">Todos los productos</h2>
     </div>
   </div>
-  
+</div>
+
 
 <!-- Productos -->
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-3">
-      <div class="producto">
-        <img src="Producto_1.jpeg" alt="Producto 1">
-        <h4 class="text-center mt-3">Nombre del Producto 1</h4>
-        <p class="text-center">Precio: $20.00</p>
-      </div>
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_1.jpeg" alt="Producto 1">
+      <h4 class="text-center mt-3">Royal Canin - Babycat Milk</h4>
+      <p class="text-center">Precio: $9990</p>
     </div>
-    <div class="col-md-3">
-      <div class="producto">
-        <img src="Producto_2.jpg" alt="Producto 2">
-        <h4 class="text-center mt-3">Nombre del Producto 2</h4>
-        <p class="text-center">Precio: $25.00</p>
-      </div>
+
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_2.jpg" alt="Producto 2">
+      <h4 class="text-center mt-3">Purina Cat Show - Gatitos Alimento</h4>
+      <p class="text-center">Precio: $15990</p>
     </div>
-    <div class="col-md-3">
-      <div class="producto">
-        <img src="Producto_3.jpg" alt="Producto 3">
-        <h4 class="text-center mt-3">Nombre del Producto 3</h4>
-        <p class="text-center">Precio: $30.00</p>
-      </div>
+
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_3.jpg" alt="Producto 3">
+      <h4 class="text-center mt-3">Royal Canin - Kitten Alimento  </h4>
+      <p class="text-center">Precio: $12990</p>
     </div>
+  </div>
+</div>
     <!-- Puedes agregar más productos aquí -->
   </div>
 </div>

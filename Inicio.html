@@ -11,37 +11,40 @@
   <!-- Estilos personalizados -->
   <style>
     body {
-      background-color: #f2f2f2; /* Cambiar fondo de página */
+      background-color: #ffffff; /* Cambiar fondo de página */
       color: #333; /* Texto negro */
-      /* Agregar imagen de fondo */
-      background-image: url('fondo2.jpg'); /* Cambiar 'nombre_de_la_imagen.jpg' por la ruta de tu imagen */
-      background-size: cover;
-      background-position: center;
     }
     .navbar {
       width: 100%;
       background-color: #43a076; /* Color del navbar */
+      border: 1px solid #ccc; /* Agregar borde al navbar */
+      border-radius: 5px; /* Agregar bordes redondeados al navbar */
+      margin-bottom: 20px; /* Espacio entre navbar y carrusel */
     }
     .navbar-nav .nav-link {
       color: #fff !important; /* Cambiar color del texto del navbar */
     }
     .carousel {
       margin-top: 20px; /* Espacio entre navbar y carrusel */
+      border: 2px solid #ccc; /* Agregar borde al carrusel */
+      border-radius: 5px; /* Agregar bordes redondeados al carrusel */
     }
     .carousel-item img {
-  max-width: 800px;
-  max-height: 300px; /* Altura máxima del cuadro del carrusel */
-  width: auto; /* Ancho automático para mantener la proporción */
-  margin: auto; /* Centrar la imagen horizontalmente */
-  object-fit: contain; /* Hacer que la imagen se ajuste al cuadro manteniendo su proporción */
-}
-
+      max-width: 800px;
+      max-height: 300px; /* Altura máxima del cuadro del carrusel */
+      width: auto; /* Ancho automático para mantener la proporción */
+      margin: auto; /* Centrar la imagen horizontalmente */
+      object-fit: contain; /* Hacer que la imagen se ajuste al cuadro manteniendo su proporción */
+    }
     .carousel-item {
       text-align: center;
     }
     .producto {
       margin-top: 20px; /* Espacio entre carrusel y productos */
       margin-bottom: 20px; /* Espacio entre productos */
+      border: 2px solid #ccc; /* Agregar borde a los productos */
+      border-radius: 5px; /* Agregar bordes redondeados a los productos */
+      padding: 10px; /* Agregar relleno a los productos */
     }
     .producto img {
       max-width: 100%; /* Ajustar imagen al ancho del contenedor */
@@ -58,11 +61,14 @@
       background-color: #333; /* Color de fondo del cuadro de contacto */
       color: #fff; /* Color del texto */
       padding: 20px; /* Espaciado interno */
+      margin-top: 20px; /* Espacio entre productos y contacto */
+      border: 1px solid #ccc; /* Agregar borde al cuadro de contacto */
+      border-radius: 5px; /* Agregar bordes redondeados al cuadro de contacto */
     }
     .carousel-control-prev,
     .carousel-control-next {
       filter: invert(1); /* Invertir el color de las flechas para que se muestren en negro */
-}
+    }
   </style>
 </head>
 <body>
@@ -100,19 +106,22 @@
 </nav>
 
 <!-- Carrusel de productos recomendados -->
-<div class="container mt-4">
+<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+
           <div class="carousel-item active">
             <img src="Carrusel_1.jpg" class="d-block w-100 img-carrusel" alt="Producto 1">
           </div>
+
           <div class="carousel-item">
             <img src="Carrusel_2.jpg" class="d-block w-100 img-carrusel" alt="Producto 2">
           </div>
+          
           <div class="carousel-item">
-            <img src="Carrusel_3.jpg"d-block w-100 img-carrusel" alt="Producto 3">
+            <img src="Carrusel_3.jpg" class="d-block w-100 img-carrusel" alt="Producto 3">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -128,23 +137,26 @@
   </div>
 </div>
 
-<!-- Tres productos -->
+
+<!-- Productos -->
 <div class="container mt-4">
   <div class="row">
-    <div class="col producto">
+    <div class="col-md-3 producto mx-auto">
       <img src="Producto_1.jpeg" alt="Producto 1">
-      <h4 class="text-center mt-3">Nombre del Producto 1</h4>
-      <p class="text-center">Precio: $20.00</p>
+      <h4 class="text-center mt-3">Royal Canin - Babycat Milk</h4>
+      <p class="text-center">Precio: $9990</p>
     </div>
-    <div class="col producto">
+
+    <div class="col-md-3 producto mx-auto">
       <img src="Producto_2.jpg" alt="Producto 2">
-      <h4 class="text-center mt-3">Nombre del Producto 2</h4>
-      <p class="text-center">Precio: $30.00</p>
+      <h4 class="text-center mt-3">Purina Cat Show - Gatitos Alimento</h4>
+      <p class="text-center">Precio: $15990</p>
     </div>
-    <div class="col producto">
+
+    <div class="col-md-3 producto mx-auto">
       <img src="Producto_3.jpg" alt="Producto 3">
-      <h4 class="text-center mt-3">Nombre del Producto 3</h4>
-      <p class="text-center">Precio: $25.00</p>
+      <h4 class="text-center mt-3">Royal Canin - Kitten Alimento  </h4>
+      <p class="text-center">Precio: $12990</p>
     </div>
   </div>
 </div>

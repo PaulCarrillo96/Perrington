@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Estilos personalizados -->
+<style>
+  body {
+    background-color: #ffffff; /* Cambiar fondo de página */
+    color: #333; /* Texto negro */
+
+  }
+  .navbar {
+    width: 100%;
+    background-color: #e0a244; /* Color del navbar */
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important; /* Cambiar color del texto del navbar */
+  }
+  .btn-primary {
+  background-color: #65a2aa; /* Cambia el color de fondo de los botones a naranja */
+  border-color: #65a2aa; /* Cambia el color del borde de los botones a naranja */
+  }
+
+ .btn-primary:hover {
+  background-color: #5a8c92; /* Cambia el color de fondo de los botones al pasar el cursor a un tono más oscuro de naranja */
+  border-color: #5a8c92; /* Cambia el color del borde de los botones al pasar el cursor a un tono más oscuro de naranja */
+  }
+  .producto {
+  margin-top: 20px; /* Espacio entre productos */
+  margin-bottom: 20px; /* Espacio entre productos */
+  border: 3px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+  padding: 10px; /* Espacio interno dentro del contenedor */
+  border-radius: 8px; /* Borde redondeado */
+  }
+ .cuadro-productos {
+  border: 2px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+  padding: 10px; /* Espacio interno dentro del contenedor */
+  border-radius: 8px; /* Borde redondeado */
+   }
+  .producto img {
+    max-width: 100%; /* Ajustar imagen al ancho del contenedor */
+    height: auto;
+  }
+  .producto h4 {
+    font-size: 1.2rem; /* Tamaño de fuente del nombre del producto */
+  }
+  .producto p {
+    font-size: 1rem; /* Tamaño de fuente del precio */
+  }
+  
+  .contacto {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    background-color: #333; /* Color de fondo del cuadro de contacto */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+  }
+  .categoria-btn {
+    margin-bottom: 10px; /* Espacio entre botones de categoría */
+  }
+</style>
+
+<!--Estilo dee la descripcion del producto-->
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    display: flex;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    flex: 1;
+    padding: 20px;
+}
+
+</style>
+
+    <body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+    <!-- Icono de huella de gato -->
+        <a class="navbar-brand" href="#"><i class="fas fa-paw mr-2"></i>Perrington</a>
+   <!-- Formulario de búsqueda -->
+        <form class="form-inline mx-auto search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                                   <!-- Elementos de la barra de navegación -->
+                 <li class="nav-item">
+                      <a class="nav-link" href="Inicio.html"><i class="fas fa-home mr-1"></i>Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="Producto.html"><i class="fas fa-box mr-1"></i>Productos</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html"><i class="fas fa-address-book mr-1"></i>Contacto</a>
+                       </li>
+                                      <!-- Carro de compra -->
+                     <a class="nav-link ml-auto" href="Carrito.html"><i class="fas fa-shopping-cart mr-2"></i>Mis productos</a>
+             </ul>
+        </div>
+    </div>
+</nav>
+</head>
+<body>
+
+<div class="container">
+    <div class="product">
+        <div class="image">
+            <img src="Producto_1.jpeg" alt="Comida Para Gatos">
+        </div>
+        <div class="details">
+            <h2>Comida Para Gatos</h2>
+            <p>Cantidad en Stock: 10</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur esse aspernatur inventore suscipit deleniti quod perferendis id magni eos placeat, ea, consectetur est dolore dicta autem perspiciatis dolorem delectus!</p>
+            <button style="color: #333;text-align: center;margin: auto;">Compra aqui</button> 
+        <div>
+            <button>Agregar al Carrito</button>
+        </div>    
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+<!-- Datos de contacto -->
+<div class="container contacto text-center mt-4">
+  <div class="row">
+    <div class="col">
+      <p>Número de Teléfono: 123-456-7890</p>
+    </div>
+    <div class="col">
+      <p>Dirección: Calle Principal, Ciudad, País</p>
+    </div>
+    <div class="col">
+      <p>Correo de Soporte: soporte@example.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap y dependencias -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</style>
+</body>
+</html>

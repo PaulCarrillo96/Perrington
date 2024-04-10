@@ -11,12 +11,8 @@
   <!-- Estilos personalizados -->
   <style>
     body {
-      background-color: #e0a244; /* Cambiar fondo de página */
+      background-color: #ffffff; /* Cambiar fondo de página */
       color: #333; /* Texto negro */
-      /* Agregar imagen de fondo */
-      background-image: url('fondo2.jpg'); /* Cambiar 'nombre_de_la_imagen.jpg' por la ruta de tu imagen */
-      background-size: cover;
-      background-position: center;
     }
     .navbar {
       width: 100%;
@@ -26,9 +22,17 @@
       color: #fff !important; /* Cambiar color del texto del navbar */
     }
     .producto {
-      margin-top: 20px; /* Espacio entre productos */
-      margin-bottom: 20px; /* Espacio entre productos */
+    margin-top: 20px; /* Espacio entre productos */
+    margin-bottom: 20px; /* Espacio entre productos */
+    border: 3px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+    padding: 10px; /* Espacio interno dentro del contenedor */
+    border-radius: 8px; /* Borde redondeado */
     }
+   .cuadro-productos {
+    border: 2px solid #ccc; /* Borde de 2 píxeles sólido de color gris claro */
+    padding: 10px; /* Espacio interno dentro del contenedor */
+    border-radius: 8px; /* Borde redondeado */
+     }
     .producto img {
       max-width: 100%; /* Ajustar imagen al ancho del contenedor */
       height: auto;
@@ -47,6 +51,15 @@
     }
     .categoria-btn {
       margin-bottom: 10px; /* Espacio entre botones de categoría */
+    }
+    .btn-primary {
+    background-color: #65a2aa; /* Cambia el color de fondo de los botones a naranja */
+    border-color: #65a2aa; /* Cambia el color del borde de los botones a naranja */
+    }
+
+   .btn-primary:hover {
+    background-color: #5a8c92; /* Cambia el color de fondo de los botones al pasar el cursor a un tono más oscuro de naranja */
+    border-color: #5a8c92; /* Cambia el color del borde de los botones al pasar el cursor a un tono más oscuro de naranja */
     }
   </style>
 </head>
@@ -89,10 +102,11 @@
   <div class="row">
     <div class="col-md-3">
       <a href="Producto_Perro.html" class="btn btn-primary btn-block categoria-btn">Productos para Perros</a>
-     <!--- <button class="btn btn-primary btn-block categoria-btn" >Productos para Perros</button>-->
+      <!--<button class="btn btn-primary btn-block categoria-btn">Productos para Perros</button>-->
     </div>
     <div class="col-md-3">
-      <button class="btn btn-primary btn-block categoria-btn">Productos para Gatos</button>
+      <a href="Producto_Gato.html" class="btn btn-primary btn-block categoria-btn">Productos para Gatos</a>
+     <!--- <button class="btn btn-primary btn-block categoria-btn">Productos para Gatos</button>-->
     </div>
   </div>
 </div>
@@ -101,39 +115,34 @@
 <div class="container mt-4">
     <div class="row">
       <div class="col-md-6 offset-md-3 text-center" style="background-color: #65a2aa; color: #fff; padding: 10px;">
-        <h2 class="font-weight-bold">PRODUCTOS GATO</h2>
+        <h2 class="font-weight-bold">Producto Gatos</h2>
       </div>
     </div>
   </div>
   
 
-<!-- Contenido de productos -->
+<!-- Productos -->
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-3">
-      <!-- Aquí van los productos para perros -->
-      <div class="producto">
-        <img src="Producto_1.jpeg" alt="Producto 1">
-        <h4 class="text-center mt-3">Nombre del Producto 1</h4>
-        <p class="text-center">Precio: $20.00</p>
-      </div>
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_1.jpeg" alt="Producto 1">
+      <h4 class="text-center mt-3">Royal Canin - Babycat Milk</h4>
+      <p class="text-center">Precio: $9990</p>
     </div>
-    <div class="col-md-3">
-      <!-- Aquí van los productos para perros -->
-      <div class="producto">
-        <img src="Producto_2.jpg" alt="Producto 2">
-        <h4 class="text-center mt-3">Nombre del Producto 2</h4>
-        <p class="text-center">Precio: $25.00</p>
-      </div>
+
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_2.jpg" alt="Producto 2">
+      <h4 class="text-center mt-3">Purina Cat Show - Gatitos Alimento</h4>
+      <p class="text-center">Precio: $15990</p>
     </div>
-    <div class="col-md-3">
-      <!-- Aquí van los productos para gatos -->
-      <div class="producto">
-        <img src="Producto_3.jpg" alt="Producto 3">
-        <h4 class="text-center mt-3">Nombre del Producto 3</h4>
-        <p class="text-center">Precio: $30.00</p>
-      </div>
+
+    <div class="col-md-3 producto mb-4 mx-auto">
+      <img src="Producto_3.jpg" alt="Producto 3">
+      <h4 class="text-center mt-3">Royal Canin - Kitten Alimento  </h4>
+      <p class="text-center">Precio: $12990</p>
     </div>
+  </div>
+</div>
     <!-- Puedes agregar más productos aquí -->
   </div>
 </div>

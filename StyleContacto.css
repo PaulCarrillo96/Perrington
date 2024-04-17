@@ -1,0 +1,26 @@
+/*<!-- Estilos personalizados -->*/
+
+
+      body {
+       background-color: #ffffff; /* Cambiar fondo de página */
+       color: #333; /* Texto negro */
+     }
+     .navbar {
+       width: 100%;
+       background-color: #e0a244; /* Color del navbar */
+       border: 1px solid #ccc; /* Agregar borde al navbar */
+       border-radius: 5px; /* Agregar bordes redondeados al navbar */
+       margin-bottom: 20px; /* Espacio entre navbar y carrusel */
+     }
+     .navbar-nav .nav-link {
+       color: #fff !important; /* Cambiar color del texto del navbar */
+     }
+     .contacto {
+       font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+       background-color: #333; /* Color de fondo del cuadro de contacto */
+       color: #fff; /* Color del texto */
+       padding: 20px; /* Espaciado interno */
+       margin-top: 20px; /* Espacio entre productos y contacto */
+       border: 1px solid #ccc; /* Agregar borde al cuadro de contacto */
+       border-radius: 5px; /* Agregar bordes redondeados al cuadro de contacto */
+     }

@@ -1,0 +1,36 @@
+/*<!-- Estilos personalizados -->*/
+
+body {
+  background-color: #ffffff; /* Cambiar fondo de página */
+  color: #333; /* Texto negro */
+}
+    .navbar {
+        top: 0;
+        width: 100%;
+        background-color: #e0a244; /* Color del navbar */
+    }
+    .navbar-nav .nav-link {
+        color: #fff !important; /* Cambiar color del texto del navbar */
+    }
+    .contacto {
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  background-color: #333; /* Color de fondo del cuadro de contacto */
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+}
+    .mensaje-carrito {
+        font-size: 2rem; /* Tamaño de fuente más grande */
+        font-weight: bold; /* Negrita */
+        text-align: center; /* Centrar texto */
+        margin-top: 20px; /* Espacio entre navbar y texto en negrita */
+    }
+
+    .btn-primary {
+background-color: #65a2aa; /* Cambia el color de fondo de los botones a naranja */
+border-color: #65a2aa; /* Cambia el color del borde de los botones a naranja */
+}
+
+.btn-primary:hover {
+background-color: #5a8c92; /* Cambia el color de fondo de los botones al pasar el cursor a un tono más oscuro de naranja */
+border-color: #5a8c92; /* Cambia el color del borde de los botones al pasar el cursor a un tono más oscuro de naranja */
+}

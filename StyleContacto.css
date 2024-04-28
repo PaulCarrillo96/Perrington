@@ -24,3 +24,76 @@
        border: 1px solid #ccc; /* Agregar borde al cuadro de contacto */
        border-radius: 5px; /* Agregar bordes redondeados al cuadro de contacto */
      }
+/*<!--------------------------------------------------------->*/
+h1{
+  text-align: left;
+
+}
+  
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  
+  form {
+    width: 500px;
+    margin: auto;
+    flex-direction: column;
+    color: #333; /* Color de texto*/
+    font-family: Arial, sans-serif; /* Familia de fuentes*/
+    font-size: 20px; /* Tamaño de fuente */
+    text-rendering: auto;
+    text-align: auto;
+  }
+  
+  .mensaje-exito{
+    text-align: center;
+  }
+  
+  
+  input, textarea {
+      padding: 1px;
+     /* margin-bottom: 15px; /*Se tiene que borrar para alinear la barra de navegacion coincida*/
+      border-radius: auto;
+     border: 1px solid #ccc;}
+     /*border-radius : auto;*/
+  /*}*/
+  
+  input[type="submit"] {
+      background-color: #D99066;/*Boton enviar*/
+     color: white;
+     width: 100%;
+     margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover {
+      background-color: #D9B5A0;/*Sobre el boton enviar*/
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+    .mensaje-exito {
+    display: none;
+    color: green;
+  }
+  
+  .mensaje-error {
+    display: none;
+    color: red;
+  }

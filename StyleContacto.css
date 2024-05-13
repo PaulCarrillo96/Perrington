@@ -36,7 +36,7 @@ h1{
   }
   
   
-  form {
+  .formulario {
     width: 500px;
     margin: auto;
     flex-direction: column;

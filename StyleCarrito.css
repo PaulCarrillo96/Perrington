@@ -24,3 +24,10 @@ body {
         text-align: center; /* Centrar texto */
         margin-top: 20px; /* Espacio entre navbar y texto en negrita */
     }
+
+    .mensaje-carrito {
+      font-size: 2rem; /* Tamaño de fuente más grande */
+      font-weight: bold; /* Negrita */
+      text-align: center; /* Centrar texto */
+      margin-top: 20px; /* Espacio entre navbar y texto en negrita */
+  }

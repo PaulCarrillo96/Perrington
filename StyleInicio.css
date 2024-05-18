@@ -31,7 +31,7 @@ body {
   .producto {
     margin-top: 20px; /* Espacio entre carrusel y productos */
     margin-bottom: 20px; /* Espacio entre productos */
-    border: 2px solid #ccc; /* Agregar borde a los productos */
+    /*border: 2px solid #ccc; /* Agregar borde a los productos */
     border-radius: 5px; /* Agregar bordes redondeados a los productos */
     padding: 10px; /* Agregar relleno a los productos */
   }
@@ -58,3 +58,37 @@ body {
   .carousel-control-next {
     filter: invert(1); /* Invertir el color de las flechas para que se muestren en negro */
   }
+
+/*Estilo para la Card*/
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 300px;
+    margin: 0 10px; /* Espacio entre tarjetas */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.card.expanded img {
+    transform: scale(5.5);
+}
+.card a{
+  color: black;
+  text-decoration: none;
+  
+}

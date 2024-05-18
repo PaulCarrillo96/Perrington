@@ -1,7 +1,7 @@
     /* Modal Header */
     .modal-header {
         padding: 2px 16px;
-        background-color: #65a2aa;
+        background-color: #e0a244;
         color: white;
     }
 
@@ -38,3 +38,31 @@
     .text-center {
         text-align: center;
     }
+
+    /* Estilo para la clase img-fluid */
+            
+      .img-fluid {
+max-width: 100%; /* La imagen será responsive y no excederá el ancho de su contenedor */
+height: auto; /* Mantiene la proporción original de la imagen */
+border-radius: 1000px; /* Bordes redondeados */
+/*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+filter: drop-shadow(
+    0 0 10px rgba(0, 0, 0, .8)
+);
+}
+
+
+.img-fluid:hover {
+transform: scale(1.15); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón por el Perro */
+transition: transform 0.3s ease; /* Transición suave para el efecto de hover   */
+}
+
+.img-fluid {
+border: 2px solid #e0a244; /* Bordes del Perro de color a que quiera */ 
+}
+
+
+.img-fluid:hover {
+filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón */
+}
+
